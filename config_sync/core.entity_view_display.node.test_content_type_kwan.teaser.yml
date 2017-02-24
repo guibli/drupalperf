@@ -1,0 +1,27 @@
+uuid: 24d85a54-8ea9-46bd-9437-7751ec83330d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.test_content_type_kwan.body
+    - node.type.test_content_type_kwan
+  module:
+    - text
+    - user
+id: node.test_content_type_kwan.teaser
+targetEntityType: node
+bundle: test_content_type_kwan
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  langcode: true

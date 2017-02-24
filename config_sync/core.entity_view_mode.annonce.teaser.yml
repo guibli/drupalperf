@@ -1,0 +1,10 @@
+uuid: ab1e6ba1-8f79-43a6-ade2-68346d65b8a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - annonce
+id: annonce.teaser
+label: teaser
+targetEntityType: annonce
+cache: true

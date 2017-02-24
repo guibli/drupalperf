@@ -1,0 +1,20 @@
+uuid: d0d9c290-c74b-45bf-9543-06a1f9ff4697
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.test_content_type_kwan
+  module:
+    - path
+id: node.test_content_type_kwan.path
+field_name: path
+entity_type: node
+bundle: test_content_type_kwan
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

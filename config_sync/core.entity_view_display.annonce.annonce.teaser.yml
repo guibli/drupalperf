@@ -1,0 +1,40 @@
+uuid: 50a18a45-5135-4ac8-ab2d-011accd220fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.annonce.teaser
+    - field.field.annonce.annonce.field_image_annonce
+  module:
+    - annonce
+    - image
+    - user
+_core:
+  default_config_hash: jrZNB1tsHsAY3iBXi2ljkrys14eW3jfSc7yD6FYSQhw
+id: annonce.annonce.teaser
+targetEntityType: annonce
+bundle: annonce
+mode: teaser
+content:
+  field_image_annonce:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  name:
+    label: above
+    type: string
+    weight: -4
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

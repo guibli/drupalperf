@@ -1,0 +1,7 @@
+
+view annonce entity:
+  title: 'View Annonce entity'
+  description: 'Allow access to my content'
+administer annonce entity:
+  title: 'Administer Annonce entity'
+  description: 'administer Annonce entity'

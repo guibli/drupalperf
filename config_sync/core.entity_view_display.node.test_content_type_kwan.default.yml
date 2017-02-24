@@ -1,0 +1,25 @@
+uuid: 8c546ca2-e6f1-41a6-82a7-8be054b6fac9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.test_content_type_kwan.body
+    - node.type.test_content_type_kwan
+  module:
+    - text
+    - user
+id: node.test_content_type_kwan.default
+targetEntityType: node
+bundle: test_content_type_kwan
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  langcode: true

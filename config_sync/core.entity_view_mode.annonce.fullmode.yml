@@ -1,0 +1,10 @@
+uuid: 1d392ffa-2c0e-4f68-8625-f8cf356c6989
+langcode: en
+status: true
+dependencies:
+  module:
+    - annonce
+id: annonce.fullmode
+label: fullmode
+targetEntityType: annonce
+cache: true

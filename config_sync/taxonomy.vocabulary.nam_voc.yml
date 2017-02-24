@@ -1,0 +1,9 @@
+uuid: 850b795f-3e5f-448d-b1cb-57fabf2e7b25
+langcode: en
+status: true
+dependencies: {  }
+name: 'Nam voc'
+vid: nam_voc
+description: 'Vocabulaire de Nam'
+hierarchy: 0
+weight: 0

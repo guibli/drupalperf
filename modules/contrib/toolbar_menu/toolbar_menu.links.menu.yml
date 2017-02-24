@@ -1,0 +1,11 @@
+toolbar_menu.settings.base:
+  description: "Configure the Toolbar Menu"
+  route_name: "toolbar_menu.settings.base"
+  title: "Toolbar Menu"
+  parent: "system.admin_config"
+
+toolbar_menu.settings:
+  description: "Configure the Toolbar Menu Settings"
+  route_name: "toolbar_menu.settings"
+  title: "Toolbar Menu Settings"
+  parent: "toolbar_menu.settings.base"

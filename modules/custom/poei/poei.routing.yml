@@ -1,0 +1,19 @@
+
+poei.default_controller_hello:
+  path: '/poei/hello/{name}'
+  defaults:
+    _controller: '\Drupal\poei\Controller\DefaultController::hello'
+    _title: 'title'
+  requirements:
+    _permission: 'access content'
+
+poei.default_form:
+  path: '/admin/config/poei/default'
+  defaults:
+    _form: '\Drupal\poei\Form\DefaultForm'
+    _title: 'DefaultForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

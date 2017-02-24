@@ -1,0 +1,18 @@
+uuid: 2b02f168-b8b6-4abb-8ba5-8f954030f5a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.test_content_type_kwan
+id: node.test_content_type_kwan.title
+field_name: title
+entity_type: node
+bundle: test_content_type_kwan
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

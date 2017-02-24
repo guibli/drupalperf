@@ -1,0 +1,20 @@
+uuid: 86e87e01-c962-4ffa-ac4e-fa20eddbaf82
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.restaurant
+id: node.restaurant.uid
+field_name: uid
+entity_type: node
+bundle: restaurant
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

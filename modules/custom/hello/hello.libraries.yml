@@ -1,0 +1,5 @@
+blockcolor:
+  version: VERSION
+  css:
+    theme:
+      css/colors.css: {}

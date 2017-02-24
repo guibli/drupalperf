@@ -1,0 +1,22 @@
+uuid: c3c145f2-46f6-4480-b46c-ebcbbc4f4936
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.test_content_type_kwan
+  module:
+    - text
+id: node.test_content_type_kwan.body
+field_name: body
+entity_type: node
+bundle: test_content_type_kwan
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

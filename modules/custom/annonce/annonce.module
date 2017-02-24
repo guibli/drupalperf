@@ -1,0 +1,26 @@
+<?php
+/**
+* Implements hook_theme().
+*/
+function annonce_theme($existing, $type, $theme, $path)
+{
+  return array(
+    'annonce' => array(
+      'render element' => 'elements',
+      'template' => 'annonce',
+      'file'    =>  'annonce.page.inc',
+    )
+  );
+}
+
+function annonce_theme_suggestions_annonce(array $variables) {
+  $suggestions = array();
+  $annonce = $variables['elements']['#annonce'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'annonce__' . $sanitized_view_mode;
+  $suggestions[] = 'annonce__' . $annonce->id();
+  $suggestions[] = 'annonce__' . $annonce->id() . '__' . $sanitized_view_mode;
+
+  return $suggestions;
+}

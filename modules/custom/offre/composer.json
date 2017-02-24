@@ -1,0 +1,14 @@
+{
+  "name": "drupal/offre",
+  "type": "drupal-module",
+  "description": "module offre",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/offre",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/offre",
+    "source": "http://cgit.drupalcode.org/offre"
+  },
+  "require": { }
+}

@@ -1,0 +1,55 @@
+hello.hello:
+  path: '/hello/{testparam}'
+  defaults:
+    _title: 'Hello'
+    _controller:  '\Drupal\hello\Controller\HelloController::content'
+    testparam: 'HELLO'
+  requirements:
+    _access:  'TRUE'
+
+hello.rss:
+  path: '/hello-rss'
+  defaults:
+    _controller:  '\Drupal\hello\Controller\HelloControllerRss::content'
+  requirements:
+    _access: 'TRUE'
+
+hello.listenoeud:
+  path: '/hello/liste-noeud/{entitytype}'
+  defaults:
+    _controller:  '\Drupal\hello\Controller\HelloControllerListeNoeud::content'
+    entitytype: ''
+  requirements:
+      _access: 'TRUE'
+
+hello.lastupdate:
+  path: '/node/{node}/lastupdate'
+  defaults:
+    _controller: '\Drupal\hello\Controller\HelloControllerLastUpdate::content'
+    _title_callback: '\Drupal\hello\Controller\HelloControllerLastUpdate::newtitle'
+  requirements:
+    _permission: 'access content'
+
+calculator.form:
+  path: '/hello/calculator'
+  defaults:
+    _form: '\Drupal\hello\Form\HelloFormCalculator'
+    _title: 'calculator!'
+  requirements:
+    _permission: 'hello permission'
+
+blockcolor.form:
+  path: '/admin/appearance/blockcolor'
+  defaults:
+    _form: '\Drupal\hello\Form\HelloFormBlockcolor'
+    _title: 'Couleur des blocks'
+  requirements:
+    _permission: 'administer hello'
+
+olduser.access:
+  path: '/helloaccess/olduser'
+  defaults:
+    _controller: '\Drupal\hello\Controller\HelloAccessController::content'
+    _title: 'Hello access'
+  requirements:
+    _olduser_access: '48'

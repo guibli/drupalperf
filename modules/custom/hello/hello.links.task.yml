@@ -1,0 +1,21 @@
+hello.lastupdate:
+  route_name: hello.lastupdate
+  title: 'Last Update'
+  base_route: entity.node.canonical
+  weight: 100
+hello.hello:
+  route_name: hello.hello
+  title: 'Hello'
+  base_route: hello.hello
+hello.listenoeud:
+  route_name: hello.listenoeud
+  title: 'Liste noeud'
+  base_route: hello.hello
+calculator.form:
+  route_name: calculator.form
+  title: 'Calculator!!'
+  base_route: hello.hello
+blockcolor.form:
+  route_name: blockcolor.form
+  title: 'Block color'
+  base_route: system.themes_page

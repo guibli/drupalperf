@@ -1,0 +1,20 @@
+uuid: b9428c3b-e974-4df9-b198-6074df8fa6af
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nam_voc
+  module:
+    - path
+id: taxonomy_term.nam_voc.path
+field_name: path
+entity_type: taxonomy_term
+bundle: nam_voc
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

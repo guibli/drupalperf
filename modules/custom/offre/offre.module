@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains offre.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function offre_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the offre module.
+    case 'help.page.offre':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('module offre') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function offre_theme() {
+  return [
+    'offre' => [
+      'template' => 'offre',
+      'render element' => 'children',
+    ],
+  ];
+}

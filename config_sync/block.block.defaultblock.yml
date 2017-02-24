@@ -1,0 +1,20 @@
+uuid: 1fc5558c-7110-4dff-8e9b-98a9a860d789
+langcode: en
+status: true
+dependencies:
+  module:
+    - poei
+  theme:
+    - bartik
+id: defaultblock
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: default_block
+settings:
+  id: default_block
+  label: 'Default block'
+  provider: poei
+  label_display: visible
+visibility: {  }

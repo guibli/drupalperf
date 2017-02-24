@@ -1,0 +1,5 @@
+entity.offre_entity.add_form:
+  route_name: entity.offre_entity.add_form
+  title: 'Add Offre entity'
+  appears_on:
+    - entity.offre_entity.collection

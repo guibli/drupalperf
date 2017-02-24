@@ -1,0 +1,22 @@
+uuid: dc787138-fc03-41ea-be61-b60585699725
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.testcontent
+  module:
+    - text
+id: node.testcontent.body
+field_name: body
+entity_type: node
+bundle: testcontent
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,14 @@
+
+# Offre entity menu items definition
+entity.offre_entity.collection:
+  title: 'Offre entity list'
+  route_name: entity.offre_entity.collection
+  description: 'List Offre entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+offre_entity.admin.structure.settings:
+  title: Offre entity settings
+  description: 'Configure Offre entity entities'
+  route_name: offre_entity.settings
+  parent: system.admin_structure

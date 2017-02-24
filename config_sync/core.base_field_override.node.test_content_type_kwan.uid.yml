@@ -1,0 +1,20 @@
+uuid: bd719f12-86bc-4c3f-999e-9d4d9191cf14
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.test_content_type_kwan
+id: node.test_content_type_kwan.uid
+field_name: uid
+entity_type: node
+bundle: test_content_type_kwan
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

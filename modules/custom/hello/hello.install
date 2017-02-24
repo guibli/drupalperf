@@ -1,0 +1,52 @@
+<?php
+use Drupal\Core\Database\Database;
+function hello_schema(){
+  $schema['hello_node_history'] = array(
+    'description' => 'Stores node update history.',
+    'fields' => array(
+      'hid' => array(
+        'description' => 'Primary Key: Unique history ID.',
+        'type'        => 'serial',
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+      ),
+      'nid' => array(
+        'description' => 'Node ID.',
+        'type'        => 'int',
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+      ),
+      'update_time' => array(
+        'description' => 'Timestamp of node update.',
+        'type'        => 'int',
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+      ),
+      'uid' => array(
+        'description' => 'Champs UID',
+        'type'        => 'int',
+        'lenght'      => 10,
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+      ),
+    ),
+    'primary key' => array('hid'),
+    'indexes' => array('nid' => array('nid')),
+  );
+  return $schema;
+}
+
+/**
+ * Update table hello_node_history
+ */
+function hello_update_8101(){
+  $schema = Database::getConnection()->schema();
+  $schema->addField('hello_node_history',
+                    'uid',
+                    array(
+                      'description' => 'Champs UID',
+                      'type'=> 'int',
+                      'lenght' => 10)
+  );
+
+}

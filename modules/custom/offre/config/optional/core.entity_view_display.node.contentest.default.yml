@@ -1,0 +1,27 @@
+uuid: f16bfd28-22f1-4f42-96c6-e709bcf9d8c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contentest.body
+    - node.type.contentest
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: d_hpedfxVN8RtMiZHLTD-l96GcLvr_0nKl-YpyL8P1U
+id: node.contentest.default
+targetEntityType: node
+bundle: contentest
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  langcode: true

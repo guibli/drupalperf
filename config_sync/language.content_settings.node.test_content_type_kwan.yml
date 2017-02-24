@@ -1,0 +1,16 @@
+uuid: ef030103-122d-4014-8c57-77eca0c70aec
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.test_content_type_kwan
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.test_content_type_kwan
+target_entity_type_id: node
+target_bundle: test_content_type_kwan
+default_langcode: site_default
+language_alterable: false

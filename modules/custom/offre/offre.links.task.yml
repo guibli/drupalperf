@@ -1,0 +1,27 @@
+# Offre entity routing definition
+offre_entity.settings_tab:
+  route_name: offre_entity.settings
+  title: 'Settings'
+  base_route: offre_entity.settings
+
+entity.offre_entity.canonical:
+  route_name: entity.offre_entity.canonical
+  base_route: entity.offre_entity.canonical
+  title: 'View'
+
+entity.offre_entity.edit_form:
+  route_name: entity.offre_entity.edit_form
+  base_route: entity.offre_entity.canonical
+  title: 'Edit'
+
+entity.offre_entity.version_history:
+  route_name: entity.offre_entity.version_history
+  base_route: entity.offre_entity.canonical
+  title: 'Revisions'
+
+entity.offre_entity.delete_form:
+  route_name:  entity.offre_entity.delete_form
+  base_route:  entity.offre_entity.canonical
+  title: Delete
+  weight: 10
+

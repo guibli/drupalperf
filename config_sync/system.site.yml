@@ -1,0 +1,14 @@
+uuid: e7b1e6a9-4d6f-495a-bbf5-03c96908f6ea
+name: 'drupal DEVELOPPEMENT'
+mail: guillaume.bleriot@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

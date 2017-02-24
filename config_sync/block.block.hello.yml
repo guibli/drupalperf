@@ -1,0 +1,20 @@
+uuid: 35afe724-0746-40cb-bf73-e9175f326bd3
+langcode: en
+status: true
+dependencies:
+  module:
+    - hello
+  theme:
+    - bartik
+id: hello
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: HelloBlock
+settings:
+  id: HelloBlock
+  label: Hello!
+  provider: hello
+  label_display: visible
+visibility: {  }

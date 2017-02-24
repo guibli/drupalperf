@@ -1,0 +1,24 @@
+uuid: db48ef61-d19a-4ea1-95ea-6b29617db3ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testcontent.body
+    - node.type.testcontent
+  module:
+    - text
+    - user
+id: node.testcontent.default
+targetEntityType: node
+bundle: testcontent
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

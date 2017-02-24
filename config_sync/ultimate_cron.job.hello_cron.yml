@@ -1,0 +1,17 @@
+uuid: 56cdbd83-ca8b-4fc2-a17a-3506052b8bfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - hello
+title: 'Default cron handler'
+id: hello_cron
+weight: 0
+module: hello
+callback: hello_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

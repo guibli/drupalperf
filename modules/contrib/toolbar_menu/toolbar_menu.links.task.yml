@@ -1,0 +1,10 @@
+toolbar_menu.settings.base:
+  base_route: "system.admin_config"
+  route_name: "toolbar_menu.settings.base"
+  title: "Toolbar Menu"
+
+toolbar_menu.settings:
+  base_route: "toolbar_menu.settings.base"
+  route_name: "toolbar_menu.settings"
+  title: "Toolbar Menu Settings"
+  weight: 2

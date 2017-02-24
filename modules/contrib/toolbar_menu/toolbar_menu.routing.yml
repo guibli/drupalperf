@@ -1,0 +1,19 @@
+toolbar_menu.settings:
+  path: "admin/config/toolbar_menu/settings"
+  defaults:
+    _form: 'Drupal\toolbar_menu\Form\ToolbarMenuForm'
+    _title: "Toolbar Menu"
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: "administer toolbar menu"
+
+toolbar_menu.settings.base:
+  path: "admin/config/toolbar_menu"
+  options:
+    _admin_route: TRUE
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Settings'
+  requirements:
+    _permission: "administer toolbar menu"

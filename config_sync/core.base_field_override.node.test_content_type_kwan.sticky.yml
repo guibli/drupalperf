@@ -1,0 +1,22 @@
+uuid: 01135f5f-fbe2-4966-8dbf-4158348956f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.test_content_type_kwan
+id: node.test_content_type_kwan.sticky
+field_name: sticky
+entity_type: node
+bundle: test_content_type_kwan
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,4 @@
+name: hello
+description: module simple hello
+type: module
+core: 8.x

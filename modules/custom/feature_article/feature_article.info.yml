@@ -1,0 +1,18 @@
+name: 'Feature article'
+type: module
+core: 8.x
+dependencies:
+  - comment
+  - content_translation
+  - field
+  - file
+  - image
+  - language
+  - menu_ui
+  - node
+  - path
+  - rdf
+  - reusable_forms
+  - taxonomy
+  - text
+  - user

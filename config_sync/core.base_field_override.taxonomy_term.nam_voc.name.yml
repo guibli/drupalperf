@@ -1,0 +1,18 @@
+uuid: a1abb749-21c8-49c8-8ff9-bbb7ca0ceb02
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nam_voc
+id: taxonomy_term.nam_voc.name
+field_name: name
+entity_type: taxonomy_term
+bundle: nam_voc
+label: Name
+description: 'The term name.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

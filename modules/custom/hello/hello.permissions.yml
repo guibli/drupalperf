@@ -1,0 +1,8 @@
+hello permission:
+  title: 'Permission Hello'
+  description: 'Perm hello'
+  restrict access: 'true'
+administer hello:
+  title: 'administer color'
+  description: 'administercolor block'
+  restrict access: 'true'

@@ -1,0 +1,7 @@
+poei.default_form:
+  title: 'colorchoose'
+  route_name: poei.default_form
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
+

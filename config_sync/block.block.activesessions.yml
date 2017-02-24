@@ -1,0 +1,20 @@
+uuid: 5f80fe40-40f5-4347-98e9-dfcc79302580
+langcode: en
+status: true
+dependencies:
+  module:
+    - hello
+  theme:
+    - bartik
+id: activesessions
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: ActiveSessions
+settings:
+  id: ActiveSessions
+  label: 'Active Sessions'
+  provider: hello
+  label_display: visible
+visibility: {  }

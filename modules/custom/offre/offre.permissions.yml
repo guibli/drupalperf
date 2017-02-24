@@ -1,0 +1,33 @@
+add offre entity entities:
+  title: 'Create new Offre entity entities'
+
+administer offre entity entities:
+  title: 'Administer Offre entity entities'
+  description: 'Allow to access the administration form to configure Offre entity entities.'
+  restrict access: true
+
+delete offre entity entities:
+  title: 'Delete Offre entity entities'
+
+edit offre entity entities:
+  title: 'Edit Offre entity entities'
+
+access offre entity overview:
+  title: 'Access the Offre entity overview page'
+
+view published offre entity entities:
+  title: 'View published Offre entity entities'
+
+view unpublished offre entity entities:
+  title: 'View unpublished Offre entity entities'
+
+view all offre entity revisions:
+  title: 'View all Offre entity revisions'
+
+revert all offre entity revisions:
+  title: 'Revert all Offre entity revisions'
+  description: 'Role requires permission <em>view Offre entity revisions</em> and <em>edit rights</em> for offre entity entities in question or <em>administer offre entity entities</em>.'
+
+delete all offre entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Offre entity revisions</em> and <em>delete rights</em> for offre entity entities in question or <em>administer offre entity entities</em>.'

@@ -1,0 +1,16 @@
+uuid: c0b0c9ec-ad2d-4e79-a18c-b08c895ff1ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nam_voc
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.nam_voc
+target_entity_type_id: taxonomy_term
+target_bundle: nam_voc
+default_langcode: site_default
+language_alterable: false

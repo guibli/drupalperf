@@ -1,0 +1,82 @@
+<?php
+function hello_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match){
+  switch ($route_name) {
+    case 'help.page.hello':
+      return'<p>Help page Hello module</p>';
+      break;
+    }
+}
+
+function hello_cron(){
+  drupal_set_message(t('mon message'),'error');
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function hello_user_login($account){
+  $name = $account->getDisplayName();
+  drupal_set_message(t('Welcome dear @name',array('@name'=>$name)));
+}
+
+function hello_node_update(Drupal\Core\Entity\EntityInterface $entity)
+{
+  // Update the entity's entry in a fictional table of all entities.
+
+  $query = \Drupal::database()->insert('hello_node_history');
+  $query->fields([
+    'nid' => $entity->id(),
+    'update_time' => time(),
+    'uid'=> \Drupal::currentUser()->id()
+  ]);
+  $query->execute();
+}
+
+function hello_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'hello/blockcolor';
+}
+
+/**
+ * Implements module_preprocess_HOOK().
+ */
+function hello_preprocess_block(&$vars){
+  $config = \Drupal::config( 'hello.config');
+  $color = $config->get('color');
+
+  $vars['attributes']['class'][] = (is_array($color)?$color['color_select']:$color);
+}
+
+/**
+ * Implements hook_theme().
+ */
+function hello_theme($existing, $type, $theme, $path)
+{
+  return array(
+    'hello' => array(
+      'template' => 'hello-list-update',
+      'variables'=> array(
+        'node_title'=> NULL,
+        'string_count'=> NULL,
+        'node_type' => NULL
+      )
+    )
+  );
+}
+
+/**
+ * Implements hook_form_FORMID_alter().
+ */
+function hello_form_contact_message_feedback_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+  //Add phone
+  $form['Phone']=array(
+    '#type'           =>'textfield',
+    '#title'          =>t('Phone'),
+    '#description'    =>t('Enter your phone'),
+    '#size'           =>40,
+    '#weight'         =>-20
+  );
+  $form['actions']['submit']['#value']= 'envoyer un message maintenant';
+  $form['subject']['#access']=false;
+
+}

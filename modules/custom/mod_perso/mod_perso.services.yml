@@ -1,0 +1,5 @@
+services:
+  mod_perso.premierservice:
+    class: Drupal\mod_perso\PremierService
+    arguments: []
+
